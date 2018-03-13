@@ -6,13 +6,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.sql.Connection;
+
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("GUI.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setTitle("Recycling System");
+        primaryStage.setScene(new Scene(root, 300, 400));
         primaryStage.show();
     }
 
@@ -26,14 +28,11 @@ public class Main extends Application {
 //        DB_Connector connect = new DB_Connector();
 
             //  Test DB_Statements - insertData and retrieveData methods
-            DB_Statements statements = new DB_Statements();
+//            DB_Statements statements = new DB_Statements();
  //           statements.insertData();
 //            statements.retrieveData();
 
-
+        launch(args);
 
         }
     }
-//        launch(args);
-    //}
-//}

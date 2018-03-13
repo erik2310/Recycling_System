@@ -26,7 +26,7 @@ public class DB_Statements {
     private static Connection con = DB_Connector.connect();
 
 
-    public void insertData() {
+//    public void insertData() {
 
 /*        Employee emp = new Employee(53, "Ben", 1200.54);
         String query = "insert into employee (emp) values(?)";
@@ -90,5 +90,33 @@ public class DB_Statements {
                 System.out.println("\n--Retrieve did not execute--");
             }
         }*/
+//    }
+
+    public static double getA() {
+
+        // Statement til databasen
+        String query = "SELECT a FROM public.pant_price";
+
+        // Deklaration af double datatype til a
+        double a = 0;
+
+        try {
+            //  Create a Statement
+            stmt = con.createStatement();
+
+            //  Execute the ResultSet
+            rs = stmt.executeQuery(query);
+
+            //  Return A column from the table
+            while (rs.next()) {
+                a = rs.getDouble(1);
+            }
+            System.out.println("\n--Retrieve executed--");
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("\n--Retrieve did not execute--");
+        }
+
+        return a;
     }
 }
