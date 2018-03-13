@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="20.0" layoutY="33.0" text="Insert Bottle/Can:" />
+      <Button layoutX="124.0" layoutY="29.0" mnemonicParsing="false" text="Type A" />
+      <Label layoutX="20.0" layoutY="78.0" text="Insert Bottle/Can:" />
+      <Label layoutX="20.0" layoutY="121.0" text="Insert Bottle/Can:" />
+      <Button layoutX="124.0" layoutY="74.0" mnemonicParsing="false" text="Type B" />
+      <Button layoutX="124.0" layoutY="117.0" mnemonicParsing="false" text="Type C" />
+      <TextField layoutX="194.0" layoutY="29.0" prefHeight="25.0" prefWidth="33.0" promptText="Total A" />
+      <TextField layoutX="194.0" layoutY="74.0" prefHeight="25.0" prefWidth="33.0" promptText="Total B" />
+      <TextField layoutX="194.0" layoutY="117.0" prefHeight="25.0" prefWidth="33.0" promptText="Total C Bottles/Cans" />
+      <Button layoutX="101.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="Kvittering" />
+      <TextField layoutX="239.0" layoutY="29.0" prefHeight="25.0" prefWidth="33.0" promptText="Kr" />
+      <TextField layoutX="239.0" layoutY="74.0" prefHeight="25.0" prefWidth="33.0" promptText="Kr" />
+      <TextField layoutX="239.0" layoutY="117.0" prefHeight="25.0" prefWidth="33.0" promptText="Kr" />
+      <TextField layoutX="194.0" layoutY="156.0" prefHeight="25.0" prefWidth="33.0" promptText="Total C Bottles/Cans" />
+      <TextField layoutX="239.0" layoutY="156.0" prefHeight="25.0" prefWidth="33.0" promptText="Kr" />
+      <Label layoutX="20.0" layoutY="160.0" />
+      <Label layoutX="84.0" layoutY="160.0" text="Total:" />
+      <TextArea layoutX="24.0" layoutY="230.0" prefHeight="152.0" prefWidth="251.0" />
+   </children>
+</AnchorPane>
