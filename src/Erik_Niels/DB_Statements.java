@@ -11,9 +11,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.io.*;
+import java.sql.*;
 
-public class DB_Statements {}
-/*
+public class DB_Statements {
+
     //    Declare a Statement
     private static Statement stmt = null;
     //    Declare a result set
@@ -24,26 +26,25 @@ public class DB_Statements {}
     private static Connection con = DB_Connector.connect();
 
 
-    @SuppressWarnings("JpaQueryApiInspection")
-    public void insertData() {
+//    public void insertData() {
 
-        //Retur aRetur = new Retur(0, 1, 2, 3);
-        //String query = "insert into pant_price (a, b, c) values(1, 1.5, 3)";
+/*        Employee emp = new Employee(53, "Ben", 1200.54);
+        String query = "insert into employee (emp) values(?)";
 
 
         try {
-            //  Take an Retur object and convert it to a Byte array
+            //  Take an Employee object and convert it to a Byte array
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             ObjectOutputStream oos = new ObjectOutputStream(baos);
-            oos.writeObject(aRetur);
-            byte[] returAsByte = baos.toByteArray();
+            oos.writeObject(emp);
+            byte[] employeeAsByte = baos.toByteArray();
 
             //  Create a PreparedStatement
             pst = con.prepareStatement(query);
 
             //  Place the converted object into the input stream
-            ByteArrayInputStream bais = new ByteArrayInputStream(returAsByte);
-            pst.setBinaryStream(1, bais, returAsByte.length);
+            ByteArrayInputStream bais = new ByteArrayInputStream(employeeAsByte);
+            pst.setBinaryStream(1, bais, employeeAsByte.length);
 
             //  Execute the query
             pst.executeUpdate();
@@ -62,7 +63,7 @@ public class DB_Statements {}
 
         public void retrieveData () {
 
-            String query = "SELECT * FROM transactions";
+            String query = "SELECT * FROM employee";
 
             try {
                 //  Create a Statement
@@ -71,12 +72,12 @@ public class DB_Statements {}
                 //  Execute the ResultSet
                 rs = stmt.executeQuery(query);
 
-                //  Retur all rows from the table
+                //  Return all rows from the table
                 while (rs.next()) {
                     byte[] st = (byte[]) rs.getObject(2);
                     ByteArrayInputStream baip = new ByteArrayInputStream(st);
                     ObjectInputStream ois = new ObjectInputStream(baip);
-                    Retur emp = (Retur) ois.readObject();
+                    Employee emp = (Employee) ois.readObject();
                     System.out.println("\n" + emp.toString());
 
                 }
@@ -89,4 +90,33 @@ public class DB_Statements {}
                 System.out.println("\n--Retrieve did not execute--");
             }
         }*/
+//    }
 
+    public static double getA() {
+
+        // Statement til databasen
+        String query = "SELECT a FROM public.pant_price";
+
+        // Deklaration af double datatype til a
+        double a = 0;
+
+        try {
+            //  Create a Statement
+            stmt = con.createStatement();
+
+            //  Execute the ResultSet
+            rs = stmt.executeQuery(query);
+
+            //  Return A column from the table
+            while (rs.next()) {
+                a = rs.getDouble(1);
+            }
+            System.out.println("\n--Retrieve executed--");
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("\n--Retrieve did not execute--");
+        }
+
+        return a;
+    }
+}
