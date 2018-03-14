@@ -61,6 +61,12 @@ public class Controller {
 
         // Lægger 1 til total
         total.setText(Calculate.addOne(total));
+
+        // Lægger værdien for b fra databasen til typeBKr
+        typeBKr.setText(Calculate.addB(typeBKr));
+
+        // Lægger værdien for b fra databasen til totalKr
+        totalKr.setText(Calculate.addB(totalKr));
     }
 
     @FXML
@@ -71,6 +77,12 @@ public class Controller {
 
         // Lægger 1 til total
         total.setText(Calculate.addOne(total));
+
+        // Lægger værdien for c fra databasen til typeCKr
+        typeCKr.setText(Calculate.addC(typeCKr));
+
+        // Lægger værdien for c fra databasen til totalKr
+        totalKr.setText(Calculate.addC(totalKr));
     }
 
     @FXML
