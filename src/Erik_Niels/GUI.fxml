@@ -6,34 +6,25 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-            prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="Erik_Niels.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Erik_Niels.Controller">
    <children>
       <Label layoutX="20.0" layoutY="33.0" text="Insert Bottle/Can:" />
-       <Button fx:id="typeAButton" layoutX="124.0" layoutY="29.0" mnemonicParsing="false" onAction="#typeAButtonAction"
-               text="Type A"/>
+       <Button fx:id="typeAButton" layoutX="124.0" layoutY="29.0" mnemonicParsing="false" onAction="#typeAButtonAction" text="Type A" />
       <Label layoutX="20.0" layoutY="78.0" text="Insert Bottle/Can:" />
       <Label layoutX="20.0" layoutY="121.0" text="Insert Bottle/Can:" />
-       <Button fx:id="typeBButton" layoutX="124.0" layoutY="74.0" mnemonicParsing="false" onAction="#typeBButtonAction"
-               text="Type B"/>
-       <Button fx:id="typeCButton" layoutX="124.0" layoutY="117.0" mnemonicParsing="false" onAction="#typeCButtonAction"
-               text="Type C"/>
-       <TextField fx:id="typeATotal" layoutX="194.0" layoutY="29.0" prefHeight="25.0" prefWidth="33.0"
-                  promptText="Total A"/>
-       <TextField fx:id="typeBTotal" layoutX="194.0" layoutY="74.0" prefHeight="25.0" prefWidth="33.0"
-                  promptText="Total B"/>
-       <TextField fx:id="typeCTotal" layoutX="194.0" layoutY="117.0" prefHeight="25.0" prefWidth="33.0"
-                  promptText="Total C"/>
-       <Button fx:id="kvitteringButton" layoutX="101.0" layoutY="194.0" mnemonicParsing="false"
-               onAction="#kvitteringButtonAction" prefHeight="25.0" prefWidth="99.0" text="Kvittering"/>
-       <TextField fx:id="typeAKr" layoutX="239.0" layoutY="29.0" prefHeight="25.0" prefWidth="52.0" promptText="Kr"/>
-       <TextField fx:id="typeBKr" layoutX="239.0" layoutY="74.0" prefHeight="25.0" prefWidth="52.0" promptText="Kr"/>
-       <TextField fx:id="typeCKr" layoutX="239.0" layoutY="117.0" prefHeight="25.0" prefWidth="52.0" promptText="Kr"/>
-       <TextField fx:id="total" layoutX="194.0" layoutY="156.0" prefHeight="25.0" prefWidth="33.0" promptText="Total"/>
-       <TextField fx:id="totalKr" layoutX="239.0" layoutY="156.0" prefHeight="25.0" prefWidth="52.0" promptText="Kr"/>
+       <Button fx:id="typeBButton" layoutX="124.0" layoutY="74.0" mnemonicParsing="false" onAction="#typeBButtonAction" text="Type B" />
+       <Button fx:id="typeCButton" layoutX="124.0" layoutY="117.0" mnemonicParsing="false" onAction="#typeCButtonAction" text="Type C" />
+       <TextField fx:id="typeATotal" layoutX="194.0" layoutY="29.0" prefHeight="25.0" prefWidth="33.0" promptText="Total A" />
+       <TextField fx:id="typeBTotal" layoutX="194.0" layoutY="74.0" prefHeight="25.0" prefWidth="33.0" promptText="Total B" />
+       <TextField fx:id="typeCTotal" layoutX="194.0" layoutY="117.0" prefHeight="25.0" prefWidth="33.0" promptText="Total C" />
+       <Button fx:id="kvitteringButton" layoutX="101.0" layoutY="194.0" mnemonicParsing="false" onAction="#kvitteringButtonAction" prefHeight="25.0" prefWidth="99.0" text="Kvittering" />
+       <TextField fx:id="typeAKr" layoutX="239.0" layoutY="29.0" prefHeight="25.0" prefWidth="52.0" promptText="Kr" />
+       <TextField fx:id="typeBKr" layoutX="239.0" layoutY="74.0" prefHeight="25.0" prefWidth="52.0" promptText="Kr" />
+       <TextField fx:id="typeCKr" layoutX="239.0" layoutY="117.0" prefHeight="25.0" prefWidth="52.0" promptText="Kr" />
+       <TextField fx:id="total" layoutX="194.0" layoutY="156.0" prefHeight="25.0" prefWidth="33.0" promptText="Total" />
+       <TextField fx:id="totalKr" layoutX="239.0" layoutY="156.0" prefHeight="25.0" prefWidth="52.0" promptText="Kr" />
       <Label layoutX="20.0" layoutY="160.0" />
-       <Label layoutX="136.0" layoutY="160.0" text="Total:"/>
-      <TextArea layoutX="24.0" layoutY="230.0" prefHeight="152.0" prefWidth="251.0" />
+       <Label layoutX="136.0" layoutY="160.0" text="Total:" />
+      <TextArea fx:id="KtTextArea" layoutX="24.0" layoutY="230.0" prefHeight="152.0" prefWidth="251.0" />
    </children>
 </AnchorPane>
