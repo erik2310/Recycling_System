@@ -87,10 +87,14 @@ public class Controller {
 
     @FXML
     protected void kvitteringButtonAction() {
-        //Det her skal fjernes igen, et forsøg der skulle vise at vi kan printe til TextArea
-        String svarTekst = "*******Hello, Kvitterings Button here!*******";
+
+        String svarTekst = "**********Kvittering**********" + "\n"
+                + "Type A: - " + typeATotal.getText() + " stk. - " + typeAKr.getText() + " kr." + "\n"
+                + "Type B: - " + typeBTotal.getText() + " stk. - " + typeBKr.getText() + " kr." + "\n"
+                + "Type C: - " + typeCTotal.getText() + " stk. - " + typeCKr.getText() + " kr." + "\n"
+                + "Total: - " + total.getText() + " stk. - " + totalKr.getText() + " kr.";
         KtTextArea.appendText(svarTekst + "\n");
-   //     System.out.println("Hello, Kvitterings Button here!");
+
     }
 
 }
