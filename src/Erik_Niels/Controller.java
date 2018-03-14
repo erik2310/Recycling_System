@@ -39,53 +39,34 @@ public class Controller {
     // Metoderne til knapperne
     @FXML
     protected void typeAButtonAction() {
-        // Hvis typeATotal er tom så set teksten til 0
-        if (typeATotal.getText().equals("")) {
-            typeATotal.setText("0");
-        }
 
-        Integer totalNumToInt = Integer.valueOf(typeATotal.getText());
-        totalNumToInt++;
-        String totalNumToSting = String.valueOf(totalNumToInt);
-        typeATotal.setText(totalNumToSting);
-    }
-        // Metoderne til knapperne
-        @FXML
-        protected void typeBButtonAction() {
-            // Hvis typeBTotal er tom så set teksten til 0
-            if (typeBTotal.getText().equals("")) {
-                typeBTotal.setText("0");
-            }
+        // Lægger 1 til typeATotal
+        typeATotal.setText(Calculate.addOne(typeATotal));
 
-            Integer totalNumToInt = Integer.valueOf(typeBTotal.getText());
-            totalNumToInt++;
-            String totalNumToSting = String.valueOf(totalNumToInt);
-            typeBTotal.setText(totalNumToSting);
+        // Lægger 1 til total
+        total.setText(Calculate.addOne(total));
     }
-    // Metoderne til knapperne
-    @FXML
-    protected void typeCButtonAction() {
-        // Hvis typeCTotal er tom så set teksten til 0
-        if (typeCTotal.getText().equals("")) {
-            typeCTotal.setText("0");
-        }
 
-        Integer totalNumToInt = Integer.valueOf(typeCTotal.getText());
-        totalNumToInt++;
-        String totalNumToSting = String.valueOf(totalNumToInt);
-        typeCTotal.setText(totalNumToSting);
-    }
-/*
     @FXML
     protected void typeBButtonAction() {
-        System.out.println("Hello, B Button here!");
+
+        // Lægger 1 til typeBTotal
+        typeBTotal.setText(Calculate.addOne(typeBTotal));
+
+        // Lægger 1 til total
+        total.setText(Calculate.addOne(total));
     }
 
     @FXML
     protected void typeCButtonAction() {
-        System.out.println("Hello, C Button here!");
+
+        // Lægger 1 til typeCTotal
+        typeCTotal.setText(Calculate.addOne(typeCTotal));
+
+        // Lægger 1 til total
+        total.setText(Calculate.addOne(total));
     }
-*/
+
     @FXML
     protected void kvitteringButtonAction() {
         //Det her skal fjernes igen, et forsøg der skulle vise at vi kan printe til TextArea
