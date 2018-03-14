@@ -11,11 +11,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.io.*;
-import java.sql.*;
 
-public class DB_Statements {
-
+public class DB_Statements {}
+/*
     //    Declare a Statement
     private static Statement stmt = null;
     //    Declare a result set
@@ -26,25 +24,26 @@ public class DB_Statements {
     private static Connection con = DB_Connector.connect();
 
 
+    @SuppressWarnings("JpaQueryApiInspection")
     public void insertData() {
 
-/*        Employee emp = new Employee(53, "Ben", 1200.54);
-        String query = "insert into employee (emp) values(?)";
+        //Retur aRetur = new Retur(0, 1, 2, 3);
+        //String query = "insert into pant_price (a, b, c) values(1, 1.5, 3)";
 
 
         try {
-            //  Take an Employee object and convert it to a Byte array
+            //  Take an Retur object and convert it to a Byte array
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             ObjectOutputStream oos = new ObjectOutputStream(baos);
-            oos.writeObject(emp);
-            byte[] employeeAsByte = baos.toByteArray();
+            oos.writeObject(aRetur);
+            byte[] returAsByte = baos.toByteArray();
 
             //  Create a PreparedStatement
             pst = con.prepareStatement(query);
 
             //  Place the converted object into the input stream
-            ByteArrayInputStream bais = new ByteArrayInputStream(employeeAsByte);
-            pst.setBinaryStream(1, bais, employeeAsByte.length);
+            ByteArrayInputStream bais = new ByteArrayInputStream(returAsByte);
+            pst.setBinaryStream(1, bais, returAsByte.length);
 
             //  Execute the query
             pst.executeUpdate();
@@ -63,7 +62,7 @@ public class DB_Statements {
 
         public void retrieveData () {
 
-            String query = "SELECT * FROM employee";
+            String query = "SELECT * FROM transactions";
 
             try {
                 //  Create a Statement
@@ -72,12 +71,12 @@ public class DB_Statements {
                 //  Execute the ResultSet
                 rs = stmt.executeQuery(query);
 
-                //  Return all rows from the table
+                //  Retur all rows from the table
                 while (rs.next()) {
                     byte[] st = (byte[]) rs.getObject(2);
                     ByteArrayInputStream baip = new ByteArrayInputStream(st);
                     ObjectInputStream ois = new ObjectInputStream(baip);
-                    Employee emp = (Employee) ois.readObject();
+                    Retur emp = (Retur) ois.readObject();
                     System.out.println("\n" + emp.toString());
 
                 }
@@ -90,5 +89,4 @@ public class DB_Statements {
                 System.out.println("\n--Retrieve did not execute--");
             }
         }*/
-    }
-}
+
