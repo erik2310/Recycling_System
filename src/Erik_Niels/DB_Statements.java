@@ -119,4 +119,60 @@ public class DB_Statements {
 
         return a;
     }
+
+    public static double getB() {
+
+        // Statement til databasen
+        String query = "SELECT b FROM public.pant_price";
+
+        // Deklaration af double datatype til b
+        double b = 0;
+
+        try {
+            //  Create a Statement
+            stmt = con.createStatement();
+
+            //  Execute the ResultSet
+            rs = stmt.executeQuery(query);
+
+            //  Return A column from the table
+            while (rs.next()) {
+                b = rs.getDouble(1);
+            }
+            System.out.println("\n--Retrieve executed--");
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("\n--Retrieve did not execute--");
+        }
+
+        return b;
+    }
+
+    public static double getC() {
+
+        // Statement til databasen
+        String query = "SELECT c FROM public.pant_price";
+
+        // Deklaration af double datatype til b
+        double c = 0;
+
+        try {
+            //  Create a Statement
+            stmt = con.createStatement();
+
+            //  Execute the ResultSet
+            rs = stmt.executeQuery(query);
+
+            //  Return A column from the table
+            while (rs.next()) {
+                c = rs.getDouble(1);
+            }
+            System.out.println("\n--Retrieve executed--");
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("\n--Retrieve did not execute--");
+        }
+
+        return c;
+    }
 }

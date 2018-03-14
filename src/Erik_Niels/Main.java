@@ -71,18 +71,6 @@ public class Main extends Application {
         //System.out.println("Category: " + c.getType() + " for up to " + c.getSize() + "L" + " made of " + c.getMaterial());
 
 
-    /*
-        //  Retur DB_Connector
-        Connection conn = DB_Connector.connect();
-
-            //  Create a DB_Connector object
-        DB_Connector connect = new DB_Connector();
-
-            //  Retur DB_Statements - insertData and retrieveData methods
-            DB_Statements statements = new DB_Statements();
-            statements.insertData();
-            statements.retrieveData(); */
-
         launch(args);
     }
 }

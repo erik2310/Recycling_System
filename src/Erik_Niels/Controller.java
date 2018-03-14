@@ -45,6 +45,12 @@ public class Controller {
 
         // Lægger 1 til total
         total.setText(Calculate.addOne(total));
+
+        // Lægger værdien for a fra databasen til typeAKr
+        typeAKr.setText(Calculate.addA(typeAKr));
+
+        // Lægger værdien for a fra databasen til totalKr
+        totalKr.setText(Calculate.addA(totalKr));
     }
 
     @FXML
