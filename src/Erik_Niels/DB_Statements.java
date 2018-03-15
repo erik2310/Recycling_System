@@ -50,7 +50,6 @@ public class DB_Statements {
             e.printStackTrace();
             System.out.println("\n--Retrieve did not execute--");
         }
-
         return a;
     }
 

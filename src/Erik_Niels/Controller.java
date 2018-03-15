@@ -87,14 +87,21 @@ public class Controller {
 
     @FXML
     protected void kvitteringButtonAction() {
+        if (total.getText().equals("0") || total.getText().equals("")) {
+            KtTextArea.appendText("Please insert container(s) first!! - Dummy!");
+        } else {
 
-        String svarTekst = "              ************Kvittering************" + "\n"
-                + "Type A: - " + typeATotal.getText() + " stk. - " + typeAKr.getText() + " kr." + "\n" + "Deposit A: Cans and bottles less than 1 liter" + "\n"
-                + "Type B: - " + typeBTotal.getText() + " stk. - " + typeBKr.getText() + " kr." + "\n" + "Deposit B: Bottles of plastic 0,5 liters" + "\n"
-                + "Type C: - " + typeCTotal.getText() + " stk. - " + typeCKr.getText() + " kr." + "\n" + "Deposit C: Cans and bottles more than 1 liter" + "\n"
-                + "Total: - " + total.getText() + " stk. - " + totalKr.getText() + " kr." + "\n" + "Thank You kindly, for your business!";
-        KtTextArea.appendText(svarTekst + "\n");
+            String svarTekst = "              ************Kvittering************" + "\n" + "Type A: - " + typeATotal.getText() + " stk. - " + typeAKr.getText() + " kr." + "\n" + "Deposit A: Cans and bottles less than 1 liter" + "\n" + "Type B: - " + typeBTotal.getText() + " stk. - " + typeBKr.getText() + " kr." + "\n" + "Deposit B: Bottles of plastic 0,5 liters" + "\n" + "Type C: - " + typeCTotal.getText() + " stk. - " + typeCKr.getText() + " kr." + "\n" + "Deposit C: Cans and bottles more than 1 liter" + "\n" + "Total: - " + total.getText() + " stk. - " + totalKr.getText() + " kr." + "\n" + "Thank You kindly, for your business!";
+            KtTextArea.appendText(svarTekst + "\n");
 
+            typeATotal.setText("0");
+            typeBTotal.setText("0");
+            typeCTotal.setText("0");
+            typeAKr.setText("0");
+            typeBKr.setText("0");
+            typeCKr.setText("0");
+            total.setText("0");
+            totalKr.setText("0");
+        }
     }
-
 }
