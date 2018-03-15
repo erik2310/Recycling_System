@@ -13,7 +13,7 @@ public class DB_Connector {
     //  Username
     private static String user = "postgres";
     //  Password
-    private static String pass = "1234";
+    private static String pass = "12345";
     //  Declare a Connection
     private static Connection conn = null;
 

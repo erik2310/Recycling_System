@@ -22,7 +22,7 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-    public static ArrayList<Return> collectedReturns = new ArrayList<Return>();
+   /* public static ArrayList<Return> collectedReturns = new ArrayList<Return>();
 
     public static void insertbottle(Container c) {
         collectedReturns.add(new Return(0., 1., "bottle", "plastic", 1.5, "A"));
@@ -48,10 +48,10 @@ public class Main extends Application {
         }
         return types;
     }
-
+*/
     public static void main(String[] args) {
 
-        ArrayList<Container> bag = new ArrayList<Container>();
+ /*       ArrayList<Container> bag = new ArrayList<Container>();
         bag.add(new Container(0.75, "bottle", "plastic"));
         bag.add(new Container(0.75, "bottle", "plastic"));
         bag.add(new Container(0.75, "bottle", "plastic"));
@@ -70,7 +70,7 @@ public class Main extends Application {
         System.out.println("Total monetary refund: " + getTotalRefund());
         //System.out.println("Category: " + c.getType() + " for up to " + c.getSize() + "L" + " made of " + c.getMaterial());
 
-
+*/
         launch(args);
     }
 }
