@@ -3,6 +3,8 @@ package Erik_Niels;
 /**
  * @author Niels on 13-03-2018.
  */
+import javafx.scene.control.TextField;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.ObjectInputStream;
@@ -107,5 +109,27 @@ public class DB_Statements {
         }
 
         return c;
+    }
+
+    public static void insertTransaction(TextField totala, TextField totalb, TextField totalc, TextField totalitems, TextField total_refund) {
+
+        Integer totalatoInt = Integer.valueOf(totala.getText());
+        Integer totalbtoInt = Integer.valueOf(totalb.getText());
+        Integer totalctoInt = Integer.valueOf(totalc.getText());
+        Integer totalitemstoInt = Integer.valueOf(totalitems.getText());
+        Double total_refundtoDouble = Double.valueOf(total_refund.getText());
+
+        String query = "INSERT INTO public.transaction( a, b, c, total_num_items, total_refund) VALUES (" + totalatoInt + "," + totalbtoInt + "," + totalctoInt + "," + totalitemstoInt + "," + total_refundtoDouble + ")";
+
+        try {
+            //  Create a Statement
+            stmt = con.createStatement();
+
+            stmt.executeUpdate(query);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("\n--Insert did not execute--");
+        }
     }
 }
