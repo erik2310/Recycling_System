@@ -88,7 +88,7 @@ public class Controller {
     @FXML
     protected void kvitteringButtonAction() {
         if (total.getText().equals("0") || total.getText().equals("")) {
-            KtTextArea.appendText("Please insert container(s) first!! - Dummy!");
+            KtTextArea.appendText("*******************************************************\n" + "        Please insert container(s) first!! - Dummy!\n" + "*******************************************************");
         } else {
 
             String svarTekst = "              ************Kvittering************" + "\n" + "Type A: - " + typeATotal.getText() + " stk. - " + typeAKr.getText() + " kr." + "\n" + "Deposit A: Cans and bottles less than 1 liter" + "\n" + "Type B: - " + typeBTotal.getText() + " stk. - " + typeBKr.getText() + " kr." + "\n" + "Deposit B: Bottles of plastic 0,5 liters" + "\n" + "Type C: - " + typeCTotal.getText() + " stk. - " + typeCKr.getText() + " kr." + "\n" + "Deposit C: Cans and bottles more than 1 liter" + "\n" + "Total: - " + total.getText() + " stk. - " + totalKr.getText() + " kr." + "\n" + "Thank You kindly, for your business!";
