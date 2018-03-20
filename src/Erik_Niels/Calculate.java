@@ -2,6 +2,8 @@ package Erik_Niels;
 
 import javafx.scene.control.TextField;
 
+import java.math.BigDecimal;
+
 public class Calculate {
 
     // Metode til at lægge 1 til et TextField
@@ -38,8 +40,10 @@ public class Calculate {
         // Lægger værdien fra databasen for a til den
         totalKrToDouble = totalKrToDouble + DB_Statements.getA();
 
+        BigDecimal totalKrToBigDecimal = BigDecimal.valueOf(totalKrToDouble).setScale(2);
+
         // Converter den tilbage til String
-        String totalNumToSting = String.valueOf(totalKrToDouble);
+        String totalNumToSting = String.valueOf(totalKrToBigDecimal);
 
         return totalNumToSting;
     }
@@ -58,8 +62,10 @@ public class Calculate {
         // Lægger værdien fra databasen for b til den
         totalKrToDouble = totalKrToDouble + DB_Statements.getB();
 
+        BigDecimal totalKrToBigDecimal = BigDecimal.valueOf(totalKrToDouble).setScale(2);
+
         // Converter den tilbage til String
-        String totalNumToSting = String.valueOf(totalKrToDouble);
+        String totalNumToSting = String.valueOf(totalKrToBigDecimal);
 
         return totalNumToSting;
     }
@@ -78,8 +84,10 @@ public class Calculate {
         // Lægger værdien fra databasen for c til den
         totalKrToDouble = totalKrToDouble + DB_Statements.getC();
 
+        BigDecimal totalKrToBigDecimal = BigDecimal.valueOf(totalKrToDouble).setScale(2);
+
         // Converter den tilbage til String
-        String totalNumToSting = String.valueOf(totalKrToDouble);
+        String totalNumToSting = String.valueOf(totalKrToBigDecimal);
 
         return totalNumToSting;
     }
