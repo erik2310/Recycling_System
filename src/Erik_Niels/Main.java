@@ -18,7 +18,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("GUI.fxml"));
         primaryStage.setTitle("Retur Pant");
-        primaryStage.setScene(new Scene(root, 300, 400));
+        primaryStage.setScene(new Scene(root, 350, 400));
         primaryStage.show();
     }
 
