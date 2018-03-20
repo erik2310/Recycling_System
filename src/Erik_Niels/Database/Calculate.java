@@ -40,6 +40,7 @@ public class Calculate {
         // Lægger værdien fra databasen for a til den
         totalKrToDouble = totalKrToDouble + DB_Statements.getA();
 
+        // Laver værdien om til et tal med 2 decimaler
         BigDecimal totalKrToBigDecimal = BigDecimal.valueOf(totalKrToDouble).setScale(2);
 
         // Converter den tilbage til String
@@ -62,6 +63,7 @@ public class Calculate {
         // Lægger værdien fra databasen for b til den
         totalKrToDouble = totalKrToDouble + DB_Statements.getB();
 
+        // Laver værdien om til et tal med 2 decimaler
         BigDecimal totalKrToBigDecimal = BigDecimal.valueOf(totalKrToDouble).setScale(2);
 
         // Converter den tilbage til String
@@ -84,6 +86,7 @@ public class Calculate {
         // Lægger værdien fra databasen for c til den
         totalKrToDouble = totalKrToDouble + DB_Statements.getC();
 
+        // Laver værdien om til et tal med 2 decimaler
         BigDecimal totalKrToBigDecimal = BigDecimal.valueOf(totalKrToDouble).setScale(2);
 
         // Converter den tilbage til String
