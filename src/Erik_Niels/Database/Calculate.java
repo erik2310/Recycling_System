@@ -1,4 +1,4 @@
-package Erik_Niels;
+package Erik_Niels.Database;
 
 import javafx.scene.control.TextField;
 

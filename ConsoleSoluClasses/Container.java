@@ -1,4 +1,4 @@
-package Erik_Niels;
+package Erik_Niels.ConsoleSoluClasses;
 
 /**
  * Created by Niels on 13-03-2018.

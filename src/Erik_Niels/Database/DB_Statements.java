@@ -1,20 +1,14 @@
-package Erik_Niels;
+package Erik_Niels.Database;
 
 /**
  * @author Niels on 13-03-2018.
  */
 import javafx.scene.control.TextField;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.io.*;
-import java.sql.*;
 
 public class DB_Statements {
 

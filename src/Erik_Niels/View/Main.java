@@ -1,4 +1,5 @@
-package Erik_Niels;
+package Erik_Niels.View;
+
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -6,13 +7,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.lang.reflect.Type;
-import java.sql.Connection;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Main extends Application {
+
 
     @Override
     public void start(Stage primaryStage) throws Exception {

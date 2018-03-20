@@ -1,14 +1,13 @@
-package Erik_Niels;
+package Erik_Niels.Database;
 
 /**
  * @author Niels on 13-03-2018.
  */
 import java.sql.*;
-import java.sql.*;
 
 public class DB_Connector {
 
-    //  Database url
+    //  Erik_Niels.Database url
     private static String url = "jdbc:postgresql://localhost:5432/postgres";
     //  Username
     private static String user = "postgres";
